@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "referrals",
+  "info": {
+    "name": "Referral"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "referee": {
+      "type": "string"
+    },
+    "buyer": {
+      "type": "string"
+    },
+    "purchaseTime": {
+      "type": "string"
+    }
+  }
+}

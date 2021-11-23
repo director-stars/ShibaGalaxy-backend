@@ -1,0 +1,92 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/crypto-doges",
+      "handler": "crypto-doge.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/crypto-doges_by_owner/:owner",
+      "handler": "crypto-doge.findDogesByOwner",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/crypto-doges/count",
+      "handler": "crypto-doge.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/crypto-doges/:tokenId",
+      "handler": "crypto-doge.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/crypto-doges",
+      "handler": "crypto-doge.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/crypto-doges/:id",
+      "handler": "crypto-doge.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/crypto-doges/:id",
+      "handler": "crypto-doge.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/crypto-doges-decreaseFN/:tokenId",
+      "handler": "crypto-doge.decreaseFightNumber",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/crypto-doges-findDogesByIds",
+      "handler": "crypto-doge.findDogesByIds",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/crypto-doges-update",
+      "handler": "crypto-doge.updateOwner",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/crypto-doges-create",
+      "handler": "crypto-doge.createDoge",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

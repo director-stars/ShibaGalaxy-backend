@@ -1,0 +1,54 @@
+{
+  "name": "ShibaGalaxy",
+  "private": true,
+  "version": "0.1.0",
+  "description": "ShibaGalaxyya",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "lint": "eslint"
+  },
+  "devDependencies": {
+    "eslint": "^7.21.0"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^1.0.15",
+    "@chakra-ui/react": "^1.6.7",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@ethersproject/units": "^5.4.0",
+    "@metamask/jazzicon": "^2.0.0",
+    "@usedapp/core": "^0.4.7",
+    "axios": "^0.21.1",
+    "ethers": "^5.0.31",
+    "framer-motion": "^4.1.17",
+    "js-sha256": "^0.9.0",
+    "knex": "0.21.18",
+    "pg": "^8.5.1",
+    "pg-connection-string": "^2.4.0",
+    "sqlite3": "5.0.0",
+    "strapi": "3.6.8",
+    "strapi-admin": "3.6.8",
+    "strapi-connector-bookshelf": "3.6.8",
+    "strapi-plugin-content-manager": "3.6.8",
+    "strapi-plugin-content-type-builder": "3.6.8",
+    "strapi-plugin-email": "3.6.8",
+    "strapi-plugin-i18n": "3.6.8",
+    "strapi-plugin-upload": "3.6.8",
+    "strapi-plugin-users-permissions": "3.6.8",
+    "strapi-utils": "3.6.8"
+  },
+  "author": {
+    "name": "STARS"
+  },
+  "strapi": {
+    "uuid": "9e3b455b-2d33-443a-b27f-7a7c5f2d402a"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": "^8.0.0"
+  },
+  "license": "MIT"
+}

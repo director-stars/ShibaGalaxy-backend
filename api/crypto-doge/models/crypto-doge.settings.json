@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "crypto_shibas",
+  "info": {
+    "name": "Crypto Shiba",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Doge_ID": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "fightNumber": {
+      "type": "integer"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "classInfo": {
+      "type": "biginteger"
+    }
+  }
+}
