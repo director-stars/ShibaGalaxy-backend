@@ -22,8 +22,9 @@ module.exports = {
         if(calc_token==token){
             const doge = await strapi.services['crypto-doge'].findOne({Doge_ID:tokenId});
             await strapi.services['crypto-doge'].update({id: doge.id}, {fightNumber: doge.fightNumber - 1});
+            return true;
         }
-        return owner;
+        return false;
     },
     async findOne(ctx) {
         const { tokenId } = ctx.params;
