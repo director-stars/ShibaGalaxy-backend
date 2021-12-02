@@ -21,5 +21,9 @@ module.exports = {
             return true;
         }
         return false;
+    },
+    async find(ctx){
+        const list = await strapi.services['earned-amount'].find({amount_gt: 0, _sort:'amount:desc', _limit:100});
+        return list;
     }
 };
