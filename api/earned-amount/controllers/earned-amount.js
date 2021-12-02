@@ -1,4 +1,5 @@
 'use strict';
+const { sha256 } = require('js-sha256');
 
 /**
  * Read the documentation (https://strapi.io/documentation/developer-docs/latest/development/backend-customization.html#core-controllers)
