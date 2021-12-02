@@ -23,6 +23,7 @@ module.exports = {
             const doge = await strapi.services['crypto-doge'].findOne({Doge_ID:tokenId});
             await strapi.services['crypto-doge'].update({id: doge.id}, {fightNumber: doge.fightNumber - 1});
         }
+        return owner;
     },
     async findOne(ctx) {
         const { tokenId } = ctx.params;

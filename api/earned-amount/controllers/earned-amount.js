@@ -19,5 +19,6 @@ module.exports = {
             else
                 await strapi.services['earned-amount'].create({address: address, amount: amount});
         }
+        return address;
     }
 };
