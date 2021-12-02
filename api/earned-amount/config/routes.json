@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/earned-amounts",
+      "handler": "earned-amount.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/earned-amounts/count",
+      "handler": "earned-amount.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/earned-amounts/:id",
+      "handler": "earned-amount.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/earned-amounts",
+      "handler": "earned-amount.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/earned-amounts/update",
+      "handler": "earned-amount.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/earned-amounts/:id",
+      "handler": "earned-amount.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

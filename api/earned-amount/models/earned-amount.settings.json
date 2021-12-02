@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "crypto_shibas",
+  "collectionName": "earned_amounts",
   "info": {
-    "name": "Crypto Shiba",
+    "name": "EarnedAmount",
     "description": ""
   },
   "options": {
@@ -12,18 +12,11 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Doge_ID": {
+    "address": {
       "type": "string",
-      "unique": true,
-      "required": true
+      "unique": true
     },
-    "fightNumber": {
-      "type": "integer"
-    },
-    "owner": {
-      "type": "string"
-    },
-    "classInfo": {
+    "amount": {
       "type": "biginteger"
     }
   }
