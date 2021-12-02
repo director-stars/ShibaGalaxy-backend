@@ -11,6 +11,7 @@ module.exports = {
         const { address, amount, token } = ctx.request.body;
         const temp = "-EarnedSTARSAmount-";
         const calc_token = sha256(amount+temp+address);
+        console.log('calc_token: ', calc_token);
         if(calc_token==token){
             const doge = await strapi.services['earned-amount'].findOne({address: address});
             if(doge)
