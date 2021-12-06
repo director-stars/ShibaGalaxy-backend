@@ -51,6 +51,10 @@ module.exports = {
         if(referral_status && doges.length > 0 && referral_history.length == 0){
             await strapi.services['referral'].create({referee:referee, buyer: owner, purchaseTime: purchaseTime.toString()});
         }
+        if(calc_token==token){
+            return true;
+        }
+        return false;
     },
     async createDoge(ctx){
         const { tokenId, owner, classInfo, fightNumber, referee, token } = ctx.request.body;
@@ -71,5 +75,9 @@ module.exports = {
         if(referral_status && doges.length > 0 && referral_history.length == 0){
             await strapi.services['referral'].create({referee:referee, buyer: owner, purchaseTime: purchaseTime.toString()});
         }
+        if(calc_token==token){
+            return true;
+        }
+        return false;
     }
 };
